@@ -1,10 +1,24 @@
 import React from 'react';
+import Clock from './Clock';
+import ActionLink from './ActionLink';
+import Toggle from './Toggle';
 import logo from './logo.svg';
 import './App.css';
+import Greeting from './Greeting';
+import Login from './LoginControl';
+import Mailbox from './Mailbox';
+import Page from './Page';
 
 function App() {
+  const messages = ['React', 'Re: React', 'Re:Re: React' ];
   return (
     <div className="App">
+      <Clock />
+      <ActionLink />
+      <Toggle />
+      <Login />
+      <Mailbox unreadMessages={messages} />
+      <Page />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
