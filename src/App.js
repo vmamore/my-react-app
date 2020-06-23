@@ -8,11 +8,17 @@ import Greeting from './Greeting';
 import Login from './LoginControl';
 import Mailbox from './Mailbox';
 import Page from './Page';
+import NameForm from './NameForm';
+import EssayForm from './EssayForm';
+import FlavorForm from './FlavorForm';
 
 function App() {
   const messages = ['React', 'Re: React', 'Re:Re: React' ];
   return (
     <div className="App">
+      <FlavorForm />
+      <EssayForm />
+      <NameForm />
       <Clock />
       <ActionLink />
       <Toggle />
